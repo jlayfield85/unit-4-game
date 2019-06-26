@@ -38,15 +38,15 @@ $( document ).ready(function(){
         $('#finalScore').text(userTotal);
         } 
   
-  // This will add the wins to the userTotal.
-  function yay(){
+  // This will alert the win.
+  function winner(){
   alert("You won!");
     wins++; 
     $('#numberWins').text(wins);
     reset();
   }
   
-  //This will add the losses to the userTotal.
+  //This will alert the loss.
   function loser(){
   alert ("You lose!");
     losses++;
@@ -82,14 +82,7 @@ $( document ).ready(function(){
       userTotal = userTotal + num3;
       console.log("New userTotal= " + userTotal);
       $('#finalScore').text(userTotal);
-  
-    //This will set the win and lose.
-            if (userTotal == Random){
-            winner();
-          }
-          else if ( userTotal > Random){
-            loser();
-          } 
+
     })  
     $('#four').on ('click', function(){
       userTotal = userTotal + num4;
